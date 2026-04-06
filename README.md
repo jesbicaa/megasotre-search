@@ -84,35 +84,36 @@ engine.smart_search("note");       // Busca parcial
 engine.smart_search("notebok");    // Busca fuzzy (corrige para Notebook)
 ```
 
-🧠 Arquitetura e Algoritmos
-O sistema segue o fluxo:
-[Product] → [Index (HashMap)] → [Search Engine] → [Resultados]
+### 🧠 Arquitetura e Algoritmos
+O sistema segue o fluxo:  
+`[Product] → [Index (HashMap)] → [Search Engine] → [Resultados]`
 
-⚙️ Detalhes Técnicos
-HashMap: Utilizado para indexação com complexidade média O(1).
+* **⚙️ Detalhes Técnicos**:
+    * **HashMap**: Utilizado para indexação com complexidade média **O(1)**.
+    * **Vec**: Armazenamento dinâmico dos dados brutos.
+    * **Busca Híbrida**: O motor prioriza buscas exatas antes de aplicar algoritmos de similaridade (Fuzzy), otimizando o tempo de resposta.
 
-Vec: Armazenamento dinâmico dos dados brutos.
+---
 
-Busca Híbrida: O motor prioriza buscas exatas antes de aplicar algoritmos de similaridade (Fuzzy), otimizando o tempo de resposta.
+### 📈 Desempenho
+* ⚡ **Alta velocidade** de busca e baixa latência.
+* 🏗️ **Arquitetura escalável** para grandes volumes de dados.
 
-📈 Desempenho
-Alta velocidade de busca e baixa latência.
+---
 
-Arquitetura escalável para grandes volumes de dados.
+### 🔮 Melhorias Futuras
+- [ ] 🔎 **Autocomplete**: Sugestões em tempo real.
+- [ ] 📊 **Ranking de relevância**: Ordenar por popularidade ou preço.
+- [ ] 🌐 **API REST**: Expor o serviço via Actix-web ou Rocket.
+- [ ] 🧠 **Sistema de recomendação**: Uso de grafos para produtos relacionados.
 
-🔮 Melhorias Futuras
-[ ] 🔎 Autocomplete: Sugestões em tempo real.
+---
 
-[ ] 📊 Ranking de relevância: Ordenar por popularidade ou preço.
+### 👩‍💻 Autora
+**Jéssica Bianca da Silva** **RA**: 160289  
+*Disciplina: Data Structure Strategy and Implementation*
 
-[ ] 🌐 API REST: Expor o serviço via Actix-web ou Rocket.
+---
 
-[ ] 🧠 Sistema de recomendação: Uso de grafos para produtos relacionados.
-
-👩‍💻 Autora
-Jéssica Bianca da Silva RA: 160289
-
-Disciplina: Data Structure Strategy and Implementation
-
-📄 Licença
-Projeto desenvolvido para fins acadêmicos.
+### 📄 Licença
+> Projeto desenvolvido para fins acadêmicos.
