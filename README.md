@@ -43,20 +43,23 @@ megastore-search/
 └── README.md
 ```
 
-▶️ Como Executar
-Certifique-se de ter o Rust/Cargo instalado.
+### ▶️ Como Executar
 
-Compilar o projeto:
-```
-cargo build
-Rodar a aplicação:
-```
-Bash
-cargo run
-Executar Testes:
+Certifique-se de ter o **Rust/Cargo** instalado.
 
-Bash
-cargo test
+1. **Compilar o projeto:**
+   ```bash
+   cargo build
+   
+2. **Rodar a aplicação**
+   ```bash
+   cargo run
+
+
+3. **Executar Testes:**
+   ```bash
+   cargo test
+
 📊 Configuração de Logs
 Para visualizar os logs durante a execução:
 
