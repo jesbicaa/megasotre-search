@@ -60,18 +60,21 @@ Certifique-se de ter o **Rust/Cargo** instalado.
    ```bash
    cargo test
 
-📊 Configuração de Logs
-Para visualizar os logs durante a execução:
+---
 
-Linux/macOS:
+### 📊 Configuração de Logs
+Para visualizar os logs de execução, defina a variável de ambiente:
 
-Bash
-RUST_LOG=info cargo run
-Windows (PowerShell):
+* **Linux/macOS:**
+  ```bash
+  RUST_LOG=info cargo run
 
-PowerShell
-$env:RUST_LOG="info"
-cargo run
+* **Windows (PowerShell):**
+  ```bash
+  $env:RUST_LOG="info"
+  cargo run
+
+
 🔎 Exemplos de Uso
 Rust
 engine.smart_search("Notebook");   // Busca exata
