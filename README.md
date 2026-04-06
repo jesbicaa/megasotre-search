@@ -75,11 +75,15 @@ Para visualizar os logs de execução, defina a variável de ambiente:
   cargo run
 
 
-🔎 Exemplos de Uso
-Rust
+---
+
+### 🔎 Exemplos de Uso
+```rust
 engine.smart_search("Notebook");   // Busca exata
 engine.smart_search("note");       // Busca parcial
 engine.smart_search("notebok");    // Busca fuzzy (corrige para Notebook)
+```
+
 🧠 Arquitetura e Algoritmos
 O sistema segue o fluxo:
 [Product] → [Index (HashMap)] → [Search Engine] → [Resultados]
